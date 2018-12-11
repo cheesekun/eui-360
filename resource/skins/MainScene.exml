@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainSceneSkin" width="2200" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16795d2fcf7" ></w:Config>
+	<e:Rect width="2200" height="700" fillColor="0xfff0c7" left="0" top="0" strokeAlpha="0" strokeWeight="0" x="3" y="0" scaleX="1" scaleY="1"/>
+	<e:Rect width="2200" height="580" fillColor="0xd1776c" fillAlpha="1" enabled="false" anchorOffsetY="0" bottom="-3" strokeAlpha="0" strokeWeight="0" x="0" y="700" scaleX="1" scaleY="1"/>
+	<e:Scroller id="scroller" width="720" height="1280" scrollPolicyH="on" scrollPolicyV="off" x="0" y="0">
+		<e:Group id="viewportGroup" scrollEnabled="true" width="2200">
+			<e:Image source="d7_png" x="171.91" y="718.25" scaleY="0.96" anchorOffsetX="0" width="840.35" anchorOffsetY="0" height="508.93"/>
+			<e:Image source="d1_png" left="0" top="0" x="0" y="0" scaleX="1" scaleY="1.03"/>
+			<e:Image source="d3_png" x="444" scaleY="1.16" top="0" scaleX="1.02"/>
+			<e:Image source="d5_png" x="339.18" y="692.04"/>
+			<e:Image source="sofa_png" x="653.9" y="603.43"/>
+			<e:Image source="d2_png" x="1027.41" y="1.98" scaleY="1.04"/>
+			<e:Image source="d8_png" x="473.98" anchorOffsetX="0" top="0" width="795.45" anchorOffsetY="0" height="241.4"/>
+			<e:Image source="d12_png" x="1572.4" y="768.29" scaleX="1.13" anchorOffsetX="0" width="228.77"/>
+			<e:Image source="d9_png" x="1487.91" y="433.8"/>
+			<e:Image source="d10_png" x="1878.71" y="127.14"/>
+			<e:Image source="d11_png" x="1932.21" y="151.64"/>
+			<e:Image source="d4_png" y="432" x="1632.02" anchorOffsetX="0" width="567.98"/>
+			<e:Group id="man" width="322" height="246" x="616" y="470" scaleY="2.44" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.73">
+				<e:Image width="258" height="188" x="148.15" y="0" source="head_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.74"/>
+				<e:Image width="233.31" height="88.64" x="-49.13" y="173.22" source="nleg_png" anchorOffsetX="0" anchorOffsetY="0"/>
+				<e:Image id="mCalf" width="104.86" height="60.79" x="60.31" y="170.16" source="xleg_png" anchorOffsetX="107" anchorOffsetY="-0.52" rotation="346.55"/>
+				<e:Image id="mThigh" width="143.7" height="39.64" x="207.55" y="187.13" source="bleg_png" anchorOffsetX="144.63" anchorOffsetY="20.39" rotation="5.08" scaleX="1.21"/>
+				<e:Image id="mHand" width="134" height="134" x="268" y="135" source="hand_png" anchorOffsetX="134.1" anchorOffsetY="0" rotation="0"/>
+				<e:Group id="smokeGroup" width="70.52" height="82.78" x="64.33" y="8.98" anchorOffsetX="0" anchorOffsetY="0" alpha="1">
+					<e:Image width="25.63" height="25.63" x="44.18000000000001" y="56.59" source="q1_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.15" scaleY="1"/>
+					<e:Image width="20.57" height="20.57" x="30.689999999999998" y="37.140000000000015" anchorOffsetX="0" anchorOffsetY="0" source="q2_png" scaleX="1" scaleY="1"/>
+					<e:Image width="15.41" height="15.41" x="14.350000000000023" y="18.02" source="q3_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+				</e:Group>
+				<e:Rect width="20" height="20" x="197" y="11"/>
+			</e:Group>
+			<e:Group id="girl" width="478" height="532" x="1134" y="662" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Image id="gLeg" width="138" height="138" x="141.56" y="330" source="g_leg" anchorOffsetX="68" anchorOffsetY="4" rotation="0"/>
+				<e:Image width="154" height="126" x="258.82" y="349.32" source="box" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.12"/>
+				<e:Image width="250.79" height="180" x="79.41" y="198.17" source="g_body" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.11"/>
+				<e:Image id="gHand" width="180" height="180" x="346.4" y="197.56" source="g_hand" anchorOffsetX="94" anchorOffsetY="0" rotation="5.21"/>
+				<e:Image width="314" height="266.68" x="75.41" y="-21.05" source="g_head" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.13"/>
+			</e:Group>
+			<e:Image id="app1" width="216" height="598.55" y="562" source="app1" anchorOffsetX="0" anchorOffsetY="0" left="0" scaleY="1.1"/>
+			<e:Image source="d6_png" x="0" y="1052" scaleX="1" scaleY="1"/>
+			<e:Image id="app2" width="120" height="120" x="24.5" y="1126" source="app2" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+			<e:Image id="app3" width="116.98" height="116.98" x="265.91" y="881.68" source="app3" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.55"/>
+			<e:Image id="app4" width="159.4" height="159.4" x="332.55" y="1024.17" source="app4" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app5" width="129.09" height="129.09" x="825.46" y="1082.94" source="app5" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app7" width="126.06" height="126.06" x="1773.86" y="768.29" anchorOffsetX="0" anchorOffsetY="0" source="app7"/>
+			<e:Image id="app9" width="138.18" height="138.18" x="1349.73" y="281.81" source="app9" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app10" width="101.82" height="101.82" x="1051.09" y="324.17" source="app10" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app12" width="154" height="154" x="551.18" y="467.43" source="app12" anchorOffsetX="0" anchorOffsetY="0" scaleY="0.91" scaleX="1.04"/>
+			<e:Image id="app11" width="94" height="92" x="907.55" y="467.43" source="app11" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app13" width="168" height="168" x="2083.71" y="267.99" source="app13" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.71"/>
+			<e:Image id="app14" width="82" height="82" x="402.9" y="815.68" source="app14" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app15" width="104" height="104" x="265.91" y="768.29" source="app15" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="app16" width="99.04" height="99.04" x="1957.71" y="634.8" source="app16" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.73"/>
+			<e:Image id="c1" width="204" height="204" x="66" y="970" source="c1" anchorOffsetX="0" anchorOffsetY="0" scaleY="0.87" scaleX="1"/>
+			<e:Image id="c2" width="82.13" height="82.13" x="1250.66" y="242.09" source="c2" anchorOffsetX="0" anchorOffsetY="0" scaleY="0.63"/>
+			<e:Image id="c3" width="86.67" height="86.67" x="1245.27" y="343.91" source="c3" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c4" width="59.39" height="59.39" x="1170.16" y="233.85" source="c4" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c5" width="91.22" height="80.61" x="1159.62" y="343.86" source="c5" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.75"/>
+			<e:Image id="c6" width="257.88" height="257.88" x="1580.07" y="79.39" source="c6" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Group id="shoeGroup" width="260" height="233.33" x="1824.77" y="1027.2" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Image id="c7_1" width="160" height="160" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="c7_1" scaleX="0.74" scaleY="1.13"/>
+				<e:Image id="c7_2" width="160" height="160" x="0" y="0" source="c7_2" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.63" scaleY="1.11"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="contentJustify" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="sockGroup" width="240" height="200" x="1584.77" y="1023.25" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Image id="c8_1" width="107.82" height="107.82" x="0" y="0" source="c8_1" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+				<e:Image id="c8_2" width="123.5" height="123.5" x="91.85" y="64.5" source="c8_2" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.09" scaleY="1" rotation="360"/>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+			<e:Image id="c9" width="116.97" height="116.97" x="1027.41" y="1153.55" source="c9" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c10" width="138.18" height="138.18" x="495.66" y="733.84" source="c10" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c11" width="107.12" height="183.64" x="616.11" y="559.43" source="c11" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c12" width="80.61" height="80.61" x="1089.55" y="1042.64" source="c12" anchorOffsetX="0" anchorOffsetY="0" rotation="360"/>
+			<e:Image id="c13" width="78.91" height="78.91" x="811.8" y="521.7" source="c13" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c14" width="127.88" height="127.88" x="1905.87" y="296.64" source="c14" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.25"/>
+			<e:Image id="c15" width="101.03" height="57.69" x="1949.54" y="773.63" source="c15" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="c16" width="106" height="106" x="521.95" y="1113.83" source="c16" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.77"/>
+			<e:Image id="c17" width="116.97" height="116.97" x="763.92" y="721.53" source="c17" anchorOffsetX="0" anchorOffsetY="0" rotation="360"/>
+			<e:Image id="c18" width="289.7" height="289.7" x="1505.7" y="505.86" source="c18" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="tip" source="tip_png" x="797" y="404"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<e:Group id="directionGroup" width="720" height="200" verticalCenter="-12" horizontalCenter="0" visible="false">
+		<e:Image id="rr" width="124" height="124" source="rr" verticalCenter="0" y="50" scaleX="1" scaleY="1" right="0"/>
+		<e:Image id="lr" width="124" height="124" source="lr" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" y="50" scaleX="1" scaleY="1" left="0"/>
+	</e:Group>
+</e:Skin>

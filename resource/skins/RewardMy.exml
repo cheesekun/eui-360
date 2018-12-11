@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RewardMySkin" width="640" height="660" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16796c8d4fa" ></w:Config>
+	<e:Image source="t_png" y="26" anchorOffsetX="0" width="577" anchorOffsetY="0" height="262.51" horizontalCenter="0"/>
+	<e:Button id="closeBtn" label="" top="0" right="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="close_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>
