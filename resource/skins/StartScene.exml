@@ -4,9 +4,9 @@
 	<e:Image source="p1_bg_png" left="0" right="0" top="0" bottom="0"/>
 	<e:Image source="logo1_png" horizontalCenter="0" verticalCenter="-376"/>
 	<e:Image id="musicImg" width="74" height="74" x="646" y="73" source="music_png" anchorOffsetX="37" anchorOffsetY="37"/>
-	<e:Image id="pjImg" width="88" height="110" x="142" y="272" source="pj_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image id="pjImg" width="88" height="110" x="160" y="272" source="pj_png" anchorOffsetX="18" anchorOffsetY="0" rotation="10.61"/>
 	<e:Image width="720" height="2" y="14" source="topline_png" fillMode="repeat" anchorOffsetX="0" anchorOffsetY="0" left="0"/>
-	<e:Image id="sbImg" width="88" height="88" x="538" y="196" source="sb_png" anchorOffsetX="0" anchorOffsetY="0" scaleY="1.98"/>
+	<e:Image id="sbImg" width="88" height="88" x="594" y="196" source="sb_png" anchorOffsetX="56" anchorOffsetY="0" scaleY="1.98" rotation="1.69"/>
 	<e:Image source="logo2_png" y="406" horizontalCenter="0"/>
 	<e:Image source="tips_png" y="553" horizontalCenter="0.5"/>
 	<e:Group id="btnGroup" width="340" height="400" y="812" horizontalCenter="0">
@@ -48,7 +48,11 @@
 		</e:skinName>
 	</e:Button>
 	<e:Group id="popRewardGroup" width="720" height="1280" left="0" top="0" visible="false">
-		<e:Rect id="mask" width="720" height="1280" left="0" top="0" x="-208" y="-480" scaleX="1" scaleY="1" alpha="0.6"/>
+		<e:Rect width="720" height="1280" scaleX="1" scaleY="1" alpha="0.6" left="0" top="0"/>
 		<ns1:RewardMy id="popRewardMy" width="640" height="660" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" x="-168" y="-170" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="popRuleGroup" width="720" height="1280" left="0" top="0" visible="false">
+		<e:Rect width="720" height="1280" left="0" top="0" alpha=".6"/>
+		<ns1:Rule width="640" height="880" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
 </e:Skin>

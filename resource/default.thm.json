@@ -15,7 +15,9 @@
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"StartScene": "resource/skins/StartScene.exml",
 		"MainScene": "resource/skins/MainScene.exml",
-		"RewardMy": "resource/skins/RewardMy.exml"
+		"RewardMy": "resource/skins/RewardMy.exml",
+		"Rule": "resource/skins/Rule.exml",
+		"prize": "resource/skins/prize.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -33,7 +35,9 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/skins/MainScene.exml",
+		"resource/skins/prize.exml",
 		"resource/skins/RewardMy.exml",
+		"resource/skins/Rule.exml",
 		"resource/skins/StartScene.exml"
 	],
 	"path": "resource/default.thm.json"

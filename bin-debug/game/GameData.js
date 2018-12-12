@@ -11,6 +11,7 @@ var GameData = (function () {
     function GameData() {
     }
     GameData.musicSwitch = 1;
+    GameData.prizeTotal = 14;
     return GameData;
 }());
 __reflect(GameData.prototype, "GameData");

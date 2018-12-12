@@ -52,7 +52,11 @@ declare module skins{
 }
 declare class MainSceneSkin extends eui.Skin{
 }
+declare class prizeSkin extends eui.Skin{
+}
 declare class RewardMySkin extends eui.Skin{
+}
+declare class RuleSkin extends eui.Skin{
 }
 declare class StartSceneSkin extends eui.Skin{
 }

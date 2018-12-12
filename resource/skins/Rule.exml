@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RuleSkin" width="640" height="880" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="167a06957bf" ></w:Config>
+	<e:Rect width="577" height="600" y="268" fillColor="0x4c947a" strokeColor="0x1f4159" horizontalCenter="0.5" strokeWeight="5" ellipseWidth="50" ellipseHeight="50"/>
+	<e:Image source="t_png" y="26" width="577" height="261.57" horizontalCenter="0"/>
+	<e:Scroller width="520" height="560" y="294" horizontalCenter="0" scrollPolicyH="off" scrollPolicyV="on">
+		<e:Group height="800">
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" x="0" y="0" anchorOffsetY="0" height="72" anchorOffsetX="0" width="520"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="-24" top="146" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="1" top="828" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="1" top="718" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="0" top="646" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="0" top="574" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="0" top="490" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="-24" top="418" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="-24" top="346" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" horizontalCenter="0" top="74" anchorOffsetX="0" width="520" anchorOffsetY="0" height="72"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="-24" top="274" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="2016年4月30日 11点 — 2016年5月4日 11点" width="520" height="72" horizontalCenter="1" top="218" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<e:Button id="closeBtn" label="" right="0" top="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="close_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

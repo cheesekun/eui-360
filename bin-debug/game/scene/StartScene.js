@@ -17,16 +17,21 @@ var StartScene = (function (_super) {
         _super.prototype.partAdded.call(this, partName, instance);
     };
     StartScene.prototype.childrenCreated = function () {
+        var _this = this;
         _super.prototype.childrenCreated.call(this);
         // 播放背景音乐
         this.sound = RES.getRes('music_m4a');
         this.soundChannel = this.sound.play(0, -1);
         // GameData.musicSwitch = 1;
         this.musicImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.musicController, this);
+        this.rewardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            _this.popRuleGroup.visible = true;
+        }, this);
         this.btnGroup.touchEnabled = true;
         this.btnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.controllGroupBtns, this);
         // 监听弹窗关闭事件
-        this.addEventListener('CLOSE_POP', this.closeRewardMy, this);
+        this.addEventListener('CLOSE_POP_REWARD_MY', this.closeRewardMy, this);
+        this.addEventListener('CLOSE_POP_RULE', this.closeRule, this);
         this.startAnimation();
     };
     // 控制音乐播放
@@ -70,8 +75,11 @@ var StartScene = (function (_super) {
     };
     // 关闭我的奖品弹框
     StartScene.prototype.closeRewardMy = function () {
-        console.log(111);
         this.popRewardGroup.visible = false;
+    };
+    // 关闭规则弹框
+    StartScene.prototype.closeRule = function () {
+        this.popRuleGroup.visible = false;
     };
     // 初始动画
     StartScene.prototype.startAnimation = function () {
@@ -83,6 +91,22 @@ var StartScene = (function (_super) {
             rotation: 360
         }, 3000);
         // TODO: 扫帚与簸箕动画
+        tw.get(this.pjImg, {
+            loop: true
+        }).to({
+            rotation: 4.65
+        }, 500)
+            .to({
+            rotation: 10.61
+        }, 500);
+        tw.get(this.sbImg, {
+            loop: true
+        }).to({
+            rotation: 5.55
+        }, 500)
+            .to({
+            rotation: 1.69
+        }, 500);
     };
     return StartScene;
 }(eui.Component));

@@ -8,24 +8,22 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
-var RewardMy = (function (_super) {
-    __extends(RewardMy, _super);
-    function RewardMy() {
+var Rule = (function (_super) {
+    __extends(Rule, _super);
+    function Rule() {
         return _super.call(this) || this;
     }
-    RewardMy.prototype.partAdded = function (partName, instance) {
+    Rule.prototype.partAdded = function (partName, instance) {
         _super.prototype.partAdded.call(this, partName, instance);
     };
-    RewardMy.prototype.childrenCreated = function () {
+    Rule.prototype.childrenCreated = function () {
         _super.prototype.childrenCreated.call(this);
         this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
     };
-    // A页面监听 a.addEventListener("bcallback", (e: egret.TouchEvent)=>{console.log("b回传的data信息",e.data);}, this);
-    // B界面抛出 this.parent.dispatchEventWith("bcallback",false,data);
-    RewardMy.prototype.close = function () {
-        var closeEvent = new egret.Event('CLOSE_POP_REWARD_MY');
+    Rule.prototype.close = function () {
+        var closeEvent = new egret.Event('CLOSE_POP_RULE');
         this.parent.parent.dispatchEvent(closeEvent);
     };
-    return RewardMy;
+    return Rule;
 }(eui.Component));
-__reflect(RewardMy.prototype, "RewardMy", ["eui.UIComponent", "egret.DisplayObject"]);
+__reflect(Rule.prototype, "Rule", ["eui.UIComponent", "egret.DisplayObject"]);

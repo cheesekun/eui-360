@@ -10,8 +10,7 @@ class StartScene extends eui.Component implements eui.UIComponent {
 	public toMainBtn: eui.Button;
 
 	public popRewardGroup: eui.Group;
-	public popRewardMy: eui.Component;
-	public mask: eui.Rect;
+	public popRuleGroup: eui.Group;
 
 	private sound: egret.Sound;
 	private soundChannel: egret.SoundChannel;
@@ -32,12 +31,16 @@ class StartScene extends eui.Component implements eui.UIComponent {
 		this.soundChannel = this.sound.play(0, -1);
 		// GameData.musicSwitch = 1;
 		this.musicImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.musicController, this);
+		this.rewardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
+			this.popRuleGroup.visible = true;
+		}, this);
 
 		this.btnGroup.touchEnabled = true
 		this.btnGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.controllGroupBtns, this);
 
 		// 监听弹窗关闭事件
-		this.addEventListener('CLOSE_POP', this.closeRewardMy, this);
+		this.addEventListener('CLOSE_POP_REWARD_MY', this.closeRewardMy, this);
+		this.addEventListener('CLOSE_POP_RULE', this.closeRule, this);
 		this.startAnimation();
 	}
 
@@ -89,9 +92,14 @@ class StartScene extends eui.Component implements eui.UIComponent {
 
 	// 关闭我的奖品弹框
 	public closeRewardMy() {
-		console.log(111)
 		this.popRewardGroup.visible = false
 	}
+
+	// 关闭规则弹框
+	public closeRule() {
+		this.popRuleGroup.visible = false
+	}
+
 
 	// 初始动画
 	private startAnimation(): void {
@@ -105,6 +113,22 @@ class StartScene extends eui.Component implements eui.UIComponent {
 		}, 3000);
 
 		// TODO: 扫帚与簸箕动画
+		tw.get(this.pjImg, {
+			loop: true
+		}).to({
+			rotation:　4.65
+		}, 500)
+		.to({
+			rotation:10.61
+		}, 500);
 
+		tw.get(this.sbImg, {
+			loop: true
+		}).to({
+			rotation: 5.55
+		}, 500)
+		.to({
+			rotation: 1.69
+		}, 500);
 	}
 }

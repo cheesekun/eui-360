@@ -5,5 +5,7 @@ enum MusicStatus {
 }
 
 class GameData {
-    public static musicSwitch: MusicStatus = 1
+    public static musicSwitch: MusicStatus = 1;
+    public static prizeTotal: number = 14;
+    
 }

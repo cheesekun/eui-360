@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="prizeSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="167a1176370" ></w:Config>
+	<e:Group id="prizeGroup" width="720" height="1280" horizontalCenter="0" top="0">
+		<e:Rect width="720" height="1280" left="0" top="0" alpha=".6"/>
+		<e:Group width="640" height="880" y="222" horizontalCenter="0">
+			<e:Rect width="577" height="600" y="268" strokeColor="0x1f4159" fillColor="0x4c947a" ellipseWidth="50" ellipseHeight="50" strokeWeight="5" x="32" scaleX="1" scaleY="1"/>
+			<e:Image source="pop-title_png" y="26" width="577" height="261.57" x="32" scaleX="1" scaleY="1"/>
+			<e:Button id="closeBtn" label="" top="0" right="0" x="444" y="-222" scaleX="1" scaleY="1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label text="{data.text}" anchorOffsetX="0" width="510" anchorOffsetY="0" height="166" size="34" textColor="0xf2b124" textAlign="left" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-18"/>
+			<e:Group width="420" height="202" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" x="-42" scaleX="1" scaleY="1" verticalCenter="164">
+				<e:Image id="icon" width="124.94" height="118" x="26" y="8" anchorOffsetX="0" anchorOffsetY="0" source="{data.icon}"/>
+				<e:Image id="img" width="146" height="146" x="226" anchorOffsetX="0" anchorOffsetY="0" source="{data.img}" y="12"/>
+				<e:Label text="{data.name}" x="10" y="140" textAlign="center"/>
+			</e:Group>
+			<e:Image source="btn_png" width="200" height="80" horizontalCenter="0" bottom="76" x="220" y="902" scaleX="1" scaleY="1"/>
+			<e:Label text="下载抽奖" textColor="0x231809" size="28" scaleX="1" scaleY="1" horizontalCenter="0" bottom="102"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

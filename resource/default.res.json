@@ -1,8 +1,12 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,egret_icon_png,description_json,app_png,b1_png,b2_png,b3_png,bottomline_png,c_png,close(1)_png,close_png,d1_png,d2_png,d3_png,d4_png,d5_png,d6_png,d7_png,d8_png,d9_png,d10_png,d11_png,d12_png,girl_png,h_png,l_png,loading_png,logo_png,logo1_png,logo2_png,man_png,p_png,p1_png,p1_bg_png,p1-btn_png,pop-title_png,sofa_png,t_png,tip_png,tips_png,wx_png,p1_json,man_json,app_json,c_json,girl_json,music_m4a",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,egret_icon_png,description_json,app_png,b1_png,b2_png,b3_png,bottomline_png,c_png,close(1)_png,close_png,d1_png,d2_png,d3_png,d4_png,d5_png,d6_png,d7_png,d8_png,d9_png,d10_png,d11_png,d12_png,girl_png,h_png,l_png,logo1_png,logo2_png,man_png,p_png,p1_png,p1_bg_png,p1-btn_png,pop-title_png,sofa_png,t_png,tip_png,tips_png,wx_png,p1_json,man_json,app_json,c_json,girl_json,music_m4a,btn_png,hand_png",
 			"name": "preload"
+		},
+		{
+			"keys": "logo_png,loading_png",
+			"name": "loading"
 		}
 	],
 	"resources": [
@@ -127,234 +131,244 @@
 			"name": "egret_icon_png"
 		},
 		{
-			"name": "description_json",
+			"url": "config/description.json",
 			"type": "json",
-			"url": "config/description.json"
+			"name": "description_json"
 		},
 		{
-			"name": "app_png",
+			"url": "assets/app.png",
 			"type": "image",
-			"url": "assets/app.png"
+			"name": "app_png"
 		},
 		{
-			"name": "b1_png",
+			"url": "assets/b1.png",
 			"type": "image",
-			"url": "assets/b1.png"
+			"name": "b1_png"
 		},
 		{
-			"name": "b2_png",
+			"url": "assets/b2.png",
 			"type": "image",
-			"url": "assets/b2.png"
+			"name": "b2_png"
 		},
 		{
-			"name": "b3_png",
+			"url": "assets/b3.png",
 			"type": "image",
-			"url": "assets/b3.png"
+			"name": "b3_png"
 		},
 		{
-			"name": "bottomline_png",
+			"url": "assets/bottomline.png",
 			"type": "image",
-			"url": "assets/bottomline.png"
+			"name": "bottomline_png"
 		},
 		{
-			"name": "c_png",
+			"url": "assets/c.png",
 			"type": "image",
-			"url": "assets/c.png"
+			"name": "c_png"
 		},
 		{
-			"name": "close(1)_png",
+			"url": "assets/close(1).png",
 			"type": "image",
-			"url": "assets/close(1).png"
+			"name": "close(1)_png"
 		},
 		{
-			"name": "close_png",
+			"url": "assets/close.png",
 			"type": "image",
-			"url": "assets/close.png"
+			"name": "close_png"
 		},
 		{
-			"name": "d1_png",
+			"url": "assets/d1.png",
 			"type": "image",
-			"url": "assets/d1.png"
+			"name": "d1_png"
 		},
 		{
-			"name": "d2_png",
+			"url": "assets/d2.png",
 			"type": "image",
-			"url": "assets/d2.png"
+			"name": "d2_png"
 		},
 		{
-			"name": "d3_png",
+			"url": "assets/d3.png",
 			"type": "image",
-			"url": "assets/d3.png"
+			"name": "d3_png"
 		},
 		{
-			"name": "d4_png",
+			"url": "assets/d4.png",
 			"type": "image",
-			"url": "assets/d4.png"
+			"name": "d4_png"
 		},
 		{
-			"name": "d5_png",
+			"url": "assets/d5.png",
 			"type": "image",
-			"url": "assets/d5.png"
+			"name": "d5_png"
 		},
 		{
-			"name": "d6_png",
+			"url": "assets/d6.png",
 			"type": "image",
-			"url": "assets/d6.png"
+			"name": "d6_png"
 		},
 		{
-			"name": "d7_png",
+			"url": "assets/d7.png",
 			"type": "image",
-			"url": "assets/d7.png"
+			"name": "d7_png"
 		},
 		{
-			"name": "d8_png",
+			"url": "assets/d8.png",
 			"type": "image",
-			"url": "assets/d8.png"
+			"name": "d8_png"
 		},
 		{
-			"name": "d9_png",
+			"url": "assets/d9.png",
 			"type": "image",
-			"url": "assets/d9.png"
+			"name": "d9_png"
 		},
 		{
-			"name": "d10_png",
+			"url": "assets/d10.png",
 			"type": "image",
-			"url": "assets/d10.png"
+			"name": "d10_png"
 		},
 		{
-			"name": "d11_png",
+			"url": "assets/d11.png",
 			"type": "image",
-			"url": "assets/d11.png"
+			"name": "d11_png"
 		},
 		{
-			"name": "d12_png",
+			"url": "assets/d12.png",
 			"type": "image",
-			"url": "assets/d12.png"
+			"name": "d12_png"
 		},
 		{
-			"name": "girl_png",
+			"url": "assets/girl.png",
 			"type": "image",
-			"url": "assets/girl.png"
+			"name": "girl_png"
 		},
 		{
-			"name": "h_png",
+			"url": "assets/h.png",
 			"type": "image",
-			"url": "assets/h.png"
+			"name": "h_png"
 		},
 		{
-			"name": "l_png",
+			"url": "assets/l.png",
 			"type": "image",
-			"url": "assets/l.png"
+			"name": "l_png"
 		},
 		{
-			"name": "loading_png",
+			"url": "assets/loading.png",
 			"type": "image",
-			"url": "assets/loading.png"
+			"name": "loading_png"
 		},
 		{
-			"name": "logo_png",
+			"url": "assets/logo.png",
 			"type": "image",
-			"url": "assets/logo.png"
+			"name": "logo_png"
 		},
 		{
-			"name": "logo1_png",
+			"url": "assets/logo1.png",
 			"type": "image",
-			"url": "assets/logo1.png"
+			"name": "logo1_png"
 		},
 		{
-			"name": "logo2_png",
+			"url": "assets/logo2.png",
 			"type": "image",
-			"url": "assets/logo2.png"
+			"name": "logo2_png"
 		},
 		{
-			"name": "man_png",
+			"url": "assets/man.png",
 			"type": "image",
-			"url": "assets/man.png"
+			"name": "man_png"
 		},
 		{
-			"name": "p_png",
+			"url": "assets/p.png",
 			"type": "image",
-			"url": "assets/p.png"
+			"name": "p_png"
 		},
 		{
-			"name": "p1_png",
+			"url": "assets/p1.png",
 			"type": "image",
-			"url": "assets/p1.png"
+			"name": "p1_png"
 		},
 		{
-			"name": "p1_bg_png",
+			"url": "assets/p1_bg.png",
 			"type": "image",
-			"url": "assets/p1_bg.png"
+			"name": "p1_bg_png"
 		},
 		{
-			"name": "p1-btn_png",
+			"url": "assets/p1-btn.png",
 			"type": "image",
-			"url": "assets/p1-btn.png"
+			"name": "p1-btn_png"
 		},
 		{
-			"name": "pop-title_png",
+			"url": "assets/pop-title.png",
 			"type": "image",
-			"url": "assets/pop-title.png"
+			"name": "pop-title_png"
 		},
 		{
-			"name": "sofa_png",
+			"url": "assets/sofa.png",
 			"type": "image",
-			"url": "assets/sofa.png"
+			"name": "sofa_png"
 		},
 		{
-			"name": "t_png",
+			"url": "assets/t.png",
 			"type": "image",
-			"url": "assets/t.png"
+			"name": "t_png"
 		},
 		{
-			"name": "tip_png",
+			"url": "assets/tip.png",
 			"type": "image",
-			"url": "assets/tip.png"
+			"name": "tip_png"
 		},
 		{
-			"name": "tips_png",
+			"url": "assets/tips.png",
 			"type": "image",
-			"url": "assets/tips.png"
+			"name": "tips_png"
 		},
 		{
-			"name": "wx_png",
+			"url": "assets/wx.png",
 			"type": "image",
-			"url": "assets/wx.png"
+			"name": "wx_png"
 		},
 		{
-			"name": "p1_json",
-			"type": "sheet",
 			"url": "assets/p1.json",
-			"subkeys": "music_png,topline_png,pj_png,sb_png,fd_png"
+			"type": "sheet",
+			"name": "p1_json",
+			"subkeys": "fd_png,music_png,pj_png,sb_png,topline_png"
 		},
 		{
-			"name": "man_json",
-			"type": "sheet",
 			"url": "assets/man.json",
-			"subkeys": "hand_png,head_png,nleg_png,q1_png,q2_png,q3_png,xleg_png,bleg_png"
+			"type": "sheet",
+			"name": "man_json",
+			"subkeys": "bleg_png,hand_png,head_png,nleg_png,q1_png,q2_png,q3_png,xleg_png"
 		},
 		{
-			"name": "app_json",
-			"type": "sheet",
 			"url": "assets/app.json",
-			"subkeys": "app1,app2,app3,app4,app5,app7,app9,app10,app11,app12,app13,app14,app15,lr,rr,app16"
+			"type": "sheet",
+			"name": "app_json",
+			"subkeys": "app1,app10,app11,app12,app13,app14,app15,app16,app2,app3,app4,app5,app7,app9,lr,rr"
 		},
 		{
-			"name": "c_json",
-			"type": "sheet",
 			"url": "assets/c.json",
-			"subkeys": "c1,c2,c3,c4,c5,c6,c9,c10,c11,c12,c13,c14,c15,c16,c17,c7_1,c7_2,c8_1,c8_2,c18"
+			"type": "sheet",
+			"name": "c_json",
+			"subkeys": "c1,c10,c11,c12,c13,c14,c15,c16,c17,c18,c2,c3,c4,c5,c6,c7_1,c7_2,c8_1,c8_2,c9"
 		},
 		{
-			"name": "girl_json",
-			"type": "sheet",
 			"url": "assets/girl.json",
+			"type": "sheet",
+			"name": "girl_json",
 			"subkeys": "box,g_body,g_hand,g_head,g_leg"
 		},
 		{
-			"name": "music_m4a",
+			"url": "assets/music.m4a",
 			"type": "sound",
-			"url": "assets/music.m4a"
+			"name": "music_m4a"
+		},
+		{
+			"name": "btn_png",
+			"type": "image",
+			"url": "assets/btn.png"
+		},
+		{
+			"name": "hand_png",
+			"type": "image",
+			"url": "assets/hand.png"
 		}
 	]
 }

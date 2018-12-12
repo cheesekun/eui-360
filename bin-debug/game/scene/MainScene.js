@@ -23,11 +23,15 @@ var MainScene = (function (_super) {
         this.scroller.bounces = false;
         this.scroller.horizontalScrollBar.autoVisibility = false;
         this.scroller.viewport.scrollH = 740;
+        // 触摸穿透
+        this.directionGroup.touchThrough = true;
+        this.directionGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.arrowEvent, this);
         setTimeout(function () {
             _this.viewportGroup.removeChild(_this.tip);
         }, 3000);
         this.startAnimation();
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.controlSceneEvent, this);
+        this.addEventListener('CLOSE_POP_PRIZE', this.closePrize, this);
     };
     // 对整个页面进行事件委托
     MainScene.prototype.controlSceneEvent = function (evt) {
@@ -39,6 +43,10 @@ var MainScene = (function (_super) {
         switch (firstLetter) {
             case 'c':
                 this.cAnimation(evt.target);
+                break;
+            case 'a':
+                this.requestApp();
+                this.aAnimation(evt.target, this.popPrize.bind(this));
         }
     };
     // c 动画
@@ -54,7 +62,60 @@ var MainScene = (function (_super) {
         }, 250, egret.Ease.backInOut);
     };
     // a 动画
-    MainScene.prototype.aAnimation = function (target) {
+    MainScene.prototype.aAnimation = function (target, cb) {
+        var tw = egret.Tween;
+        tw.get(target, {
+            loop: false
+        }).to({
+            y: target.y - 50
+        }, 1000, egret.Ease.backInOut)
+            .to({
+            y: target.y
+        }, 500, egret.Ease.backInOut)
+            .wait(800)
+            .call(cb);
+    };
+    // app 数据请求
+    MainScene.prototype.requestApp = function () {
+        var request = new egret.HttpRequest();
+        request.responseType = egret.HttpResponseType.TEXT;
+        request.open('https://easy-mock.com/mock/5c10be4a9b6eaa4cae0edb97/app', egret.HttpMethod.GET);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send();
+        // TODO: 监听，填充数据
+        request.addEventListener(egret.Event.COMPLETE, this.inputData, this);
+    };
+    // 填充数据
+    MainScene.prototype.inputData = function (event) {
+        var request = event.currentTarget;
+        var res = JSON.parse(request.response);
+        console.log(res.data);
+    };
+    // 打开弹窗
+    MainScene.prototype.popPrize = function () {
+        this.prizeComponent.visible = true;
+    };
+    // 关闭app弹框
+    MainScene.prototype.closePrize = function () {
+        console.log(222);
+        this.prizeComponent.visible = false;
+    };
+    // 方向箭头事件
+    MainScene.prototype.arrowEvent = function (evt) {
+        var distance = 100;
+        var name = evt.target.source;
+        var currDistance = this.scroller.viewport.scrollH;
+        if (name === 'rr') {
+            console.log(currDistance + distance);
+            if (currDistance + distance > 1460)
+                return;
+            this.scroller.viewport.scrollH += distance;
+        }
+        else if (name === 'lr') {
+            if (currDistance - distance < 0)
+                return;
+            this.scroller.viewport.scrollH -= distance;
+        }
     };
     // 初始动画
     MainScene.prototype.startAnimation = function () {
@@ -138,6 +199,23 @@ var MainScene = (function (_super) {
         }, 800)
             .to({
             rotation: 0
+        }, 800);
+        // 方向箭头动画
+        tw.get(this.lr, {
+            loop: true
+        }).to({
+            x: 10
+        }, 800)
+            .to({
+            x: 0
+        }, 800);
+        tw.get(this.rr, {
+            loop: true
+        }).to({
+            x: 586
+        }, 800)
+            .to({
+            x: 596
         }, 800);
     };
     return MainScene;
