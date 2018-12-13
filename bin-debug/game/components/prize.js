@@ -10,7 +10,7 @@ r.prototype = e.prototype, t.prototype = new r();
 };
 var prize = (function (_super) {
     __extends(prize, _super);
-    function prize(data) {
+    function prize() {
         return _super.call(this) || this;
     }
     prize.prototype.partAdded = function (partName, instance) {
@@ -18,6 +18,11 @@ var prize = (function (_super) {
     };
     prize.prototype.childrenCreated = function () {
         _super.prototype.childrenCreated.call(this);
+        this.msg.text = "\u606D\u559C\u4F60\u3002\u3002\u3002" + this.appName.text;
+        console.log(GameData.prizeObj);
+        this.appName.text = GameData.prizeObj.appName;
+        this.icon.source = GameData.prizeObj.icon;
+        this.img.source = GameData.prizeObj.img;
         this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
     };
     prize.prototype.close = function () {

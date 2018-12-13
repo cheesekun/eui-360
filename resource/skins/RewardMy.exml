@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="RewardMySkin" width="640" height="660" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16796c8d4fa" ></w:Config>
+	<e:Rect width="577" height="350" x="32" y="268" fillColor="0x4c947a" ellipseWidth="50" ellipseHeight="50" strokeWeight="5" strokeColor="0x1f4159"/>
 	<e:Image source="t_png" y="26" anchorOffsetX="0" width="577" anchorOffsetY="0" height="262.51" horizontalCenter="0"/>
 	<e:Button id="closeBtn" label="" top="0" right="0">
 		<e:skinName>
@@ -10,4 +11,9 @@
 			</e:Skin>
 		</e:skinName>
 	</e:Button>
+	<e:Group width="520" height="280" y="287.88" horizontalCenter="0">
+		<e:Rect width="520" height="280" horizontalCenter="0" verticalCenter="0" fillColor="0x0e4f10"/>
+		<e:Image source="h_png" width="500" height="180" horizontalCenter="0" verticalCenter="-44"/>
+		<e:Label text="快动动手指参加活动有劳才有有所得呦~" y="205" anchorOffsetY="0" height="60" verticalAlign="middle" textColor="0xf4ba50" anchorOffsetX="0" width="274.24" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
 </e:Skin>

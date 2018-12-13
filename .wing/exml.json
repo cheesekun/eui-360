@@ -1,70 +1,70 @@
 {
-    "16795d2a393": {
-        "path": "game\\scene\\StartScene.ts",
-        "class": "StartScene",
-        "parentPath": "",
-        "backgroundX": 0,
-        "backgroundY": 0,
-        "backgroundWidth": -1,
-        "backgroundHeight": -1,
-        "useBgImage": true,
-        "useBgColor": true,
-        "backgroundAlpha": "100",
-        "backgroundType": "user",
-        "backgroundColor": "#4c947a"
-    },
-    "16795d2fcf7": {
-        "path": "..\\resource\\skins\\MainScene.ts",
-        "class": "MainScene",
-        "parentPath": "",
-        "backgroundType": "null",
-        "backgroundColor": "#d1776c",
-        "backgroundX": 0,
-        "backgroundY": 0,
-        "backgroundWidth": -1,
-        "backgroundHeight": -1,
-        "useBgImage": true,
-        "useBgColor": true,
-        "backgroundAlpha": 100,
-        "guideLinesEnabled": false
-    },
-    "16796c8d4fa": {
-        "backgroundType": "null",
-        "backgroundX": 0,
-        "backgroundY": 0,
-        "backgroundWidth": -1,
-        "backgroundHeight": -1,
-        "useBgImage": true,
-        "useBgColor": true,
-        "backgroundAlpha": 100
-    },
-    "global": {
-        "globalBackgroundColor": "",
-        "globalBackgroundImage": "",
-        "globalBackgroundAlpha": 100,
-        "globalBackgroundX": 0,
-        "globalBackgroundY": 0,
-        "globalBackgroundWidth": -1,
-        "globalBackgroundHeight": -1,
-        "globalAutoLayerMarkEnable": true
-    },
-    "1679ff64c4b": {
-        "path": "game\\LoadingUI.ts",
-        "class": "LoadingUI",
-        "parentPath": "",
-        "backgroundType": "null",
-        "backgroundColor": "#273826",
-        "backgroundX": 0,
-        "backgroundY": 0,
-        "backgroundWidth": -1,
-        "backgroundHeight": -1,
-        "useBgImage": true,
-        "useBgColor": true,
-        "backgroundAlpha": 100
-    },
-    "167a1176370": {
-        "path": "..\\resource\\skins\\prize.ts",
-        "class": "prize",
-        "parentPath": ""
-    }
+  "16795d2a393": {
+    "path": "game\\scene\\StartScene.ts",
+    "class": "StartScene",
+    "parentPath": "",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": "100",
+    "backgroundType": "user",
+    "backgroundColor": "#4c947a"
+  },
+  "16795d2fcf7": {
+    "path": "..\\resource\\skins\\MainScene.ts",
+    "class": "MainScene",
+    "parentPath": "",
+    "backgroundType": "null",
+    "backgroundColor": "#d1776c",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100,
+    "guideLinesEnabled": false
+  },
+  "16796c8d4fa": {
+    "backgroundType": "null",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "global": {
+    "globalBackgroundColor": "",
+    "globalBackgroundImage": "",
+    "globalBackgroundAlpha": 100,
+    "globalBackgroundX": 0,
+    "globalBackgroundY": 0,
+    "globalBackgroundWidth": -1,
+    "globalBackgroundHeight": -1,
+    "globalAutoLayerMarkEnable": true
+  },
+  "1679ff64c4b": {
+    "path": "game\\LoadingUI.ts",
+    "class": "LoadingUI",
+    "parentPath": "",
+    "backgroundType": "null",
+    "backgroundColor": "#273826",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "167a1176370": {
+    "path": "..\\resource\\skins\\prize.ts",
+    "class": "prize",
+    "parentPath": ""
+  }
 }

@@ -14,13 +14,13 @@
 				</e:Skin>
 				</e:skinName>
 			</e:Button>
-			<e:Label text="{data.text}" anchorOffsetX="0" width="510" anchorOffsetY="0" height="166" size="34" textColor="0xf2b124" textAlign="left" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-18"/>
+			<e:Label id="msg" anchorOffsetX="0" width="510" anchorOffsetY="0" height="166" size="34" textColor="0xf2b124" textAlign="left" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-18" text=""/>
 			<e:Group width="420" height="202" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" x="-42" scaleX="1" scaleY="1" verticalCenter="164">
 				<e:Image id="icon" width="124.94" height="118" x="26" y="8" anchorOffsetX="0" anchorOffsetY="0" source="{data.icon}"/>
 				<e:Image id="img" width="146" height="146" x="226" anchorOffsetX="0" anchorOffsetY="0" source="{data.img}" y="12"/>
-				<e:Label text="{data.name}" x="10" y="140" textAlign="center"/>
+				<e:Label id="appName" x="10" y="140" textAlign="center" text=""/>
 			</e:Group>
-			<e:Image source="btn_png" width="200" height="80" horizontalCenter="0" bottom="76" x="220" y="902" scaleX="1" scaleY="1"/>
+			<e:Image id="url" source="btn_png" width="200" height="80" horizontalCenter="0" bottom="76" x="220" y="902" scaleX="1" scaleY="1"/>
 			<e:Label text="下载抽奖" textColor="0x231809" size="28" scaleX="1" scaleY="1" horizontalCenter="0" bottom="102"/>
 		</e:Group>
 	</e:Group>

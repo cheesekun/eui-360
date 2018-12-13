@@ -10,8 +10,14 @@ var MusicStatus;
 var GameData = (function () {
     function GameData() {
     }
-    GameData.musicSwitch = 1;
+    GameData.musicStatus = 1;
     GameData.prizeTotal = 14;
+    GameData.prizeObj = {
+        appName: '',
+        icon: '',
+        img: '',
+        url: ''
+    };
     return GameData;
 }());
 __reflect(GameData.prototype, "GameData");

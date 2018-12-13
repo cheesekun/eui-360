@@ -19,6 +19,8 @@ var MainScene = (function (_super) {
     MainScene.prototype.childrenCreated = function () {
         var _this = this;
         _super.prototype.childrenCreated.call(this);
+        // 网络图片跨域
+        egret.ImageLoader.crossOrigin = 'anonymous';
         this.scroller.viewport = this.viewportGroup;
         this.scroller.bounces = false;
         this.scroller.horizontalScrollBar.autoVisibility = false;
@@ -31,7 +33,8 @@ var MainScene = (function (_super) {
         }, 3000);
         this.startAnimation();
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.controlSceneEvent, this);
-        this.addEventListener('CLOSE_POP_PRIZE', this.closePrize, this);
+        // this.addEventListener('CLOSE_POP_PRIZE', this.closePrize, this);
+        this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.closePrize, this);
     };
     // 对整个页面进行事件委托
     MainScene.prototype.controlSceneEvent = function (evt) {
@@ -63,6 +66,12 @@ var MainScene = (function (_super) {
     };
     // a 动画
     MainScene.prototype.aAnimation = function (target, cb) {
+        if (!target.isClick) {
+            GameData.prizeTotal -= 1;
+            this.total.text = String(GameData.prizeTotal);
+            this.restRect.width = GameData.prizeTotal / 14 * 120;
+            target.isClick = true;
+        }
         var tw = egret.Tween;
         tw.get(target, {
             loop: false
@@ -82,23 +91,36 @@ var MainScene = (function (_super) {
         request.open('https://easy-mock.com/mock/5c10be4a9b6eaa4cae0edb97/app', egret.HttpMethod.GET);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send();
-        // TODO: 监听，填充数据
+        // 监听，填充数据
         request.addEventListener(egret.Event.COMPLETE, this.inputData, this);
     };
     // 填充数据
     MainScene.prototype.inputData = function (event) {
         var request = event.currentTarget;
         var res = JSON.parse(request.response);
-        console.log(res.data);
+        // 为什么全局的数据变了，但是视图不更新
+        GameData.prizeObj = res.data;
+        _a = [
+            GameData.prizeObj.appName,
+            "\u606D\u559C\u4F60\u3002\u3002\u3002" + GameData.prizeObj.appName,
+            GameData.prizeObj.icon,
+            GameData.prizeObj.img
+        ], this.appName.text = _a[0], this.msg.text = _a[1], this.icon.source = _a[2], this.img.source = _a[3];
+        this.downloadGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            console.log(111);
+            window.location.href = GameData.prizeObj.url;
+        }, this);
+        var _a;
     };
     // 打开弹窗
     MainScene.prototype.popPrize = function () {
-        this.prizeComponent.visible = true;
+        console.log(GameData.prizeObj);
+        this.popPrizeGroup.visible = true;
     };
     // 关闭app弹框
     MainScene.prototype.closePrize = function () {
         console.log(222);
-        this.prizeComponent.visible = false;
+        this.popPrizeGroup.visible = false;
     };
     // 方向箭头事件
     MainScene.prototype.arrowEvent = function (evt) {
@@ -107,13 +129,17 @@ var MainScene = (function (_super) {
         var currDistance = this.scroller.viewport.scrollH;
         if (name === 'rr') {
             console.log(currDistance + distance);
-            if (currDistance + distance > 1460)
+            if (currDistance + distance >= 1460) {
+                this.scroller.viewport.scrollH = 1460;
                 return;
+            }
             this.scroller.viewport.scrollH += distance;
         }
         else if (name === 'lr') {
-            if (currDistance - distance < 0)
+            if (currDistance - distance <= 0) {
+                this.scroller.viewport.scrollH = 0;
                 return;
+            }
             this.scroller.viewport.scrollH -= distance;
         }
     };

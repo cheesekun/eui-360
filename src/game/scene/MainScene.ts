@@ -16,7 +16,18 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	public lr: eui.Image;
 	public rr: eui.Image;
 
-	public prizeComponent: eui.Component;
+	// public prizeComponent: eui.Component;
+	public popPrizeGroup: eui.Group;
+	public msg: eui.Label;
+	public icon: eui.Image;
+	public img: eui.Image;
+	public closeBtn: eui.Button;
+	public appName: eui.Label;
+	public downloadGroup: eui.Group;
+
+
+	public total: eui.Label;
+	public restRect: eui.Rect;
 
 	public constructor() {
 		super();
@@ -29,6 +40,9 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 	protected childrenCreated(): void {
 		super.childrenCreated();
+		// 网络图片跨域
+		egret.ImageLoader.crossOrigin = 'anonymous';
+
 		this.scroller.viewport = this.viewportGroup;
 		this.scroller.bounces = false;
 		this.scroller.horizontalScrollBar.autoVisibility = false;
@@ -44,7 +58,8 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 		this.startAnimation();
 		this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.controlSceneEvent, this);
-		this.addEventListener('CLOSE_POP_PRIZE', this.closePrize, this);
+		// this.addEventListener('CLOSE_POP_PRIZE', this.closePrize, this);
+		this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.closePrize, this);
 	}
 
 	// 对整个页面进行事件委托
@@ -79,6 +94,12 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 	// a 动画
 	private aAnimation(target, cb: Function) {
+		if (!target.isClick) {
+			GameData.prizeTotal -= 1
+			this.total.text = String(GameData.prizeTotal);
+			this.restRect.width = GameData.prizeTotal / 14 * 120;
+			target.isClick = true;
+		}
 		let tw = egret.Tween;
 		tw.get(target, {
 			loop: false
@@ -99,7 +120,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 		request.open('https://easy-mock.com/mock/5c10be4a9b6eaa4cae0edb97/app', egret.HttpMethod.GET);
 		request.setRequestHeader('Content-Type', 'application/json');
 		request.send();
-		// TODO: 监听，填充数据
+		// 监听，填充数据
 		request.addEventListener(egret.Event.COMPLETE, this.inputData, this);
 	}
 
@@ -107,18 +128,32 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private inputData(event: egret.Event) {
 		let request = <egret.HttpRequest>event.currentTarget;
 		let res = JSON.parse(request.response);
-		console.log(res.data);
+		// 为什么全局的数据变了，但是视图不更新
+		GameData.prizeObj = res.data;
+
+		[this.appName.text, this.msg.text, this.icon.source, this.img.source] =
+			[
+				GameData.prizeObj.appName,
+				`恭喜你。。。${GameData.prizeObj.appName}`,
+				GameData.prizeObj.icon,
+				GameData.prizeObj.img
+			];
+		this.downloadGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
+			console.log(111)
+			window.location.href = GameData.prizeObj.url;
+		}, this);
 	}
 
 	// 打开弹窗
 	private popPrize() {
-		this.prizeComponent.visible = true;
+		console.log(GameData.prizeObj)
+		this.popPrizeGroup.visible = true;
 	}
 
 	// 关闭app弹框
 	public closePrize() {
 		console.log(222)
-		this.prizeComponent.visible = false;
+		this.popPrizeGroup.visible = false;
 	}
 
 
@@ -130,10 +165,16 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 		if (name === 'rr') {
 			console.log(currDistance + distance)
-			if (currDistance + distance > 1460) return
+			if (currDistance + distance >= 1460) {
+				this.scroller.viewport.scrollH = 1460;
+				return;
+			}
 			this.scroller.viewport.scrollH += distance;
 		} else if (name === 'lr') {
-			if (currDistance - distance < 0) return
+			if (currDistance - distance <= 0) {
+				this.scroller.viewport.scrollH = 0;
+				return;
+			}
 			this.scroller.viewport.scrollH -= distance;
 		}
 	}
