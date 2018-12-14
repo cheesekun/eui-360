@@ -64,8 +64,10 @@ class MainScene extends eui.Component implements eui.UIComponent {
 
 	// 对整个页面进行事件委托
 	private controlSceneEvent(evt: egret.TouchEvent) {
+
+		// 根据资源名做判断
 		console.log(evt.target.source)
-		console.log(evt.target.y)
+
 		if (!evt.target.source) return;
 		let firstLetter: string = evt.target.source[0]
 		switch (firstLetter) {
@@ -128,7 +130,7 @@ class MainScene extends eui.Component implements eui.UIComponent {
 	private inputData(event: egret.Event) {
 		let request = <egret.HttpRequest>event.currentTarget;
 		let res = JSON.parse(request.response);
-		// 为什么全局的数据变了，但是视图不更新
+
 		GameData.prizeObj = res.data;
 
 		[this.appName.text, this.msg.text, this.icon.source, this.img.source] =
@@ -139,20 +141,17 @@ class MainScene extends eui.Component implements eui.UIComponent {
 				GameData.prizeObj.img
 			];
 		this.downloadGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-			console.log(111)
 			window.location.href = GameData.prizeObj.url;
 		}, this);
 	}
 
 	// 打开弹窗
 	private popPrize() {
-		console.log(GameData.prizeObj)
 		this.popPrizeGroup.visible = true;
 	}
 
 	// 关闭app弹框
 	public closePrize() {
-		console.log(222)
 		this.popPrizeGroup.visible = false;
 	}
 

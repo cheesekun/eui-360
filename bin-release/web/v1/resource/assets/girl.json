@@ -1,0 +1,6 @@
+{"file":"girl.png","frames":{
+"box":{"x":359,"y":170,"w":179,"h":119,"offX":0,"offY":0,"sourceW":179,"sourceH":119},
+"g_body":{"x":359,"y":0,"w":232,"h":166,"offX":0,"offY":0,"sourceW":232,"sourceH":166},
+"g_hand":{"x":595,"y":0,"w":149,"h":173,"offX":0,"offY":0,"sourceW":149,"sourceH":173},
+"g_head":{"x":0,"y":0,"w":355,"h":280,"offX":0,"offY":0,"sourceW":355,"sourceH":280},
+"g_leg":{"x":0,"y":284,"w":123,"h":164,"offX":0,"offY":0,"sourceW":123,"sourceH":164}}}

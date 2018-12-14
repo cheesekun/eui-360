@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="StartSceneSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
 	<w:Config id="16795d2a393" ></w:Config>
+	<e:Rect width="720" height="1280" fillColor="0x4c947a" left="0" top="0"/>
 	<e:Image source="p1_bg_png" left="0" right="0" top="0" bottom="0"/>
 	<e:Image source="logo1_png" horizontalCenter="0" verticalCenter="-376"/>
 	<e:Image id="musicImg" width="74" height="74" x="646" y="73" source="music_png" anchorOffsetX="37" anchorOffsetY="37"/>

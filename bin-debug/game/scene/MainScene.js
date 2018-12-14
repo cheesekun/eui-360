@@ -38,8 +38,8 @@ var MainScene = (function (_super) {
     };
     // 对整个页面进行事件委托
     MainScene.prototype.controlSceneEvent = function (evt) {
+        // 根据资源名做判断
         console.log(evt.target.source);
-        console.log(evt.target.y);
         if (!evt.target.source)
             return;
         var firstLetter = evt.target.source[0];
@@ -98,7 +98,6 @@ var MainScene = (function (_super) {
     MainScene.prototype.inputData = function (event) {
         var request = event.currentTarget;
         var res = JSON.parse(request.response);
-        // 为什么全局的数据变了，但是视图不更新
         GameData.prizeObj = res.data;
         _a = [
             GameData.prizeObj.appName,
@@ -107,19 +106,16 @@ var MainScene = (function (_super) {
             GameData.prizeObj.img
         ], this.appName.text = _a[0], this.msg.text = _a[1], this.icon.source = _a[2], this.img.source = _a[3];
         this.downloadGroup.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-            console.log(111);
             window.location.href = GameData.prizeObj.url;
         }, this);
         var _a;
     };
     // 打开弹窗
     MainScene.prototype.popPrize = function () {
-        console.log(GameData.prizeObj);
         this.popPrizeGroup.visible = true;
     };
     // 关闭app弹框
     MainScene.prototype.closePrize = function () {
-        console.log(222);
         this.popPrizeGroup.visible = false;
     };
     // 方向箭头事件

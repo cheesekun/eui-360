@@ -21,9 +21,7 @@ var GameUtil = (function () {
     GameUtil.getCenterH = function (h) {
         return (GameUtil.getStageHeight() - h) / 2;
     };
-    /**
-     * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
-     */
+    // 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
     GameUtil.createBitmapByName = function (name, type) {
         if (type === void 0) { type = 'png'; }
         var result = new egret.Bitmap();
@@ -31,9 +29,7 @@ var GameUtil = (function () {
         result.texture = texture;
         return result;
     };
-    /**
-     * 根据name关键字创建一个MovieClip对象。name属性请参考resources/resource.json配置文件的内容。
-     */
+    // 根据name关键字创建一个MovieClip对象。name属性请参考resources/resource.json配置文件的内容。
     GameUtil.createMovieClipByName = function (name) {
         var data_stay = RES.getRes(name + "_json");
         console.log(data_stay);

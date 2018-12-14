@@ -8,6 +8,21 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * 该内容已直接添加至 MainScene 场景
+ * 该文件可删除
+ *
+ *
+ *
+ *
+ */
 var prize = (function (_super) {
     __extends(prize, _super);
     function prize() {

@@ -1,0 +1,27 @@
+卷 固态硬盘 的文件夹 PATH 列表
+卷序列号为 0008-5BBD
+C:.
+│  AssetAdapter.ts
+│  LoadingUI.ts
+│  Main.ts
+│  Platform.ts
+│  ThemeAdapter.ts
+│  tree.txt
+│  
+├─common
+│      GameUtil.ts
+│      
+└─game
+    │  GameData.ts
+    │  SceneManager.ts
+    │  
+    ├─components
+    │      MyImage.ts
+    │      prize.ts
+    │      RewardMy.ts
+    │      Rule.ts
+    │      
+    └─scene
+            MainScene.ts
+            StartScene.ts
+            

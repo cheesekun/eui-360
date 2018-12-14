@@ -1,3 +1,18 @@
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 该内容已直接添加至 MainScene 场景
+ * 该文件可删除
+ * 
+ * 
+ * 
+ * 
+ */
 class prize extends eui.Component implements eui.UIComponent {
 	public closeBtn: eui.Button;
 	public msg: eui.Label;

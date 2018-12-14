@@ -30,15 +30,10 @@ var LoadingUI = (function (_super) {
         // loading 图片
         var loadingPng = new eui.Image();
         loadingPng.source = 'loading_png';
-        // 进度条
-        this.bar.graphics.beginFill(0x4C947A, 1);
-        this.bar.graphics.drawRect(50, 150, 300, 12);
-        this.bar.graphics.endFill();
         // 百分比
         this.percent.textColor = 0xF7DB91;
         this.percent.textAlign = 'center';
         this.percent.y = 580;
-        console.log(this.percent);
         // 添加组
         this.group = new eui.Group();
         this.addChild(this.group);
@@ -57,7 +52,10 @@ var LoadingUI = (function (_super) {
     LoadingUI.prototype.onProgress = function (current, total) {
         var percent = Math.round(current / total * 100);
         this.percent.text = percent + "%";
-        // this.bar.graphics.drawRect( 0, 0, 3 * percent, 12 );
+        // 进度条
+        this.bar.graphics.beginFill(0x4C947A, 1);
+        this.bar.graphics.drawRect(50, 150, 3 * percent, 12);
+        this.bar.graphics.endFill();
     };
     return LoadingUI;
 }(egret.Sprite));

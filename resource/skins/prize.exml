@@ -22,6 +22,7 @@
 			</e:Group>
 			<e:Image id="url" source="btn_png" width="200" height="80" horizontalCenter="0" bottom="76" x="220" y="902" scaleX="1" scaleY="1"/>
 			<e:Label text="下载抽奖" textColor="0x231809" size="28" scaleX="1" scaleY="1" horizontalCenter="0" bottom="102"/>
+			<e:Label text="已弃用，该文件可删除" x="142" y="366" anchorOffsetX="0" width="340" anchorOffsetY="0" height="238" verticalAlign="middle" textAlign="center" size="50"/>
 		</e:Group>
 	</e:Group>
 </e:Skin>

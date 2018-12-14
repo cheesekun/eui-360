@@ -24,9 +24,8 @@ class GameUtil {
     }
     
 
-    /**
-     * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
-     */
+    
+    // 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
     public static createBitmapByName(name: string, type: string = 'png') {
         let result = new egret.Bitmap()
         let texture: egret.Texture = RES.getRes(name + '_' + type)
@@ -34,9 +33,8 @@ class GameUtil {
         return result
     }
 
-    /**
-     * 根据name关键字创建一个MovieClip对象。name属性请参考resources/resource.json配置文件的内容。
-     */
+    
+    // 根据name关键字创建一个MovieClip对象。name属性请参考resources/resource.json配置文件的内容。
     public static createMovieClipByName(name:string): egret.MovieClip {
 
         let data_stay: any = RES.getRes(name + "_json")
