@@ -1,9 +1,0 @@
-{"file":"man.png","frames":{
-"hand_png":{"x":0,"y":693,"w":244,"h":272,"offX":0,"offY":0,"sourceW":244,"sourceH":272},
-"head_png":{"x":0,"y":0,"w":304,"h":477,"offX":0,"offY":0,"sourceW":304,"sourceH":477},
-"nleg_png":{"x":0,"y":481,"w":344,"h":208,"offX":0,"offY":0,"sourceW":344,"sourceH":208},
-"q1_png":{"x":248,"y":951,"w":48,"h":48,"offX":0,"offY":0,"sourceW":48,"sourceH":48},
-"q2_png":{"x":0,"y":969,"w":37,"h":33,"offX":0,"offY":0,"sourceW":37,"sourceH":33},
-"q3_png":{"x":41,"y":969,"w":28,"h":31,"offX":0,"offY":0,"sourceW":28,"sourceH":31},
-"xleg_png":{"x":248,"y":693,"w":162,"h":157,"offX":0,"offY":0,"sourceW":162,"sourceH":157},
-"bleg_png":{"x":248,"y":854,"w":257,"h":93,"offX":0,"offY":0,"sourceW":257,"sourceH":93}}}
