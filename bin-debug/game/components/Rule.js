@@ -27,3 +27,4 @@ var Rule = (function (_super) {
     return Rule;
 }(eui.Component));
 __reflect(Rule.prototype, "Rule", ["eui.UIComponent", "egret.DisplayObject"]);
+//# sourceMappingURL=Rule.js.map

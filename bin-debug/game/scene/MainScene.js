@@ -243,3 +243,4 @@ var MainScene = (function (_super) {
     return MainScene;
 }(eui.Component));
 __reflect(MainScene.prototype, "MainScene", ["eui.UIComponent", "egret.DisplayObject"]);
+//# sourceMappingURL=MainScene.js.map
