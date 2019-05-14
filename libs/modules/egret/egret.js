@@ -8399,6 +8399,10 @@ var egret;
             if (this.source && this.source.dispose) {
                 this.source.dispose();
             }
+            // WeChat Memory leakage bug
+            if (this.source && this.source.src) {
+                this.source.src = "";
+            }
             this.source = null;
             if (egret.nativeRender) {
                 egret_native.NativeDisplayObject.disposeNativeBitmapData(this.$nativeBitmapData);
@@ -17057,6 +17061,13 @@ var egret;
          * @language zh_CN
          */
         RuntimeType.QGAME = "qgame";
+        /**
+         * 运行在 Oppo 小游戏上
+         * @version Egret 5.2.14
+         * @platform All
+         * @language zh_CN
+         */
+        RuntimeType.OPPOGAME = "oppogame";
     })(RuntimeType = egret.RuntimeType || (egret.RuntimeType = {}));
     /**
      * The Capabilities class provides properties that describe the system and runtime that are hosting the application.
@@ -17173,7 +17184,7 @@ var egret;
          * @platform Web,Native
          * @language zh_CN
          */
-        Capabilities.engineVersion = "5.2.18";
+        Capabilities.engineVersion = "5.2.19";
         /***
          * current render mode.
          * @type {string}

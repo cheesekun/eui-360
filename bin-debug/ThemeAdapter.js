@@ -96,4 +96,3 @@ var ThemeAdapter = (function () {
     return ThemeAdapter;
 }());
 __reflect(ThemeAdapter.prototype, "ThemeAdapter", ["eui.IThemeAdapter"]);
-//# sourceMappingURL=ThemeAdapter.js.map

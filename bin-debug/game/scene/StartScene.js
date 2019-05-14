@@ -111,4 +111,3 @@ var StartScene = (function (_super) {
     return StartScene;
 }(eui.Component));
 __reflect(StartScene.prototype, "StartScene", ["eui.UIComponent", "egret.DisplayObject"]);
-//# sourceMappingURL=StartScene.js.map

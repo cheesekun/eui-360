@@ -40,4 +40,3 @@ var GameUtil = (function () {
     return GameUtil;
 }());
 __reflect(GameUtil.prototype, "GameUtil");
-//# sourceMappingURL=GameUtil.js.map

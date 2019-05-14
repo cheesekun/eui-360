@@ -19,4 +19,3 @@ var MyImage = (function (_super) {
     return MyImage;
 }(eui.Image));
 __reflect(MyImage.prototype, "MyImage");
-//# sourceMappingURL=MyImage.js.map

@@ -29,4 +29,3 @@ var RewardMy = (function (_super) {
     return RewardMy;
 }(eui.Component));
 __reflect(RewardMy.prototype, "RewardMy", ["eui.UIComponent", "egret.DisplayObject"]);
-//# sourceMappingURL=RewardMy.js.map

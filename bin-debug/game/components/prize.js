@@ -47,4 +47,3 @@ var prize = (function (_super) {
     return prize;
 }(eui.Component));
 __reflect(prize.prototype, "prize", ["eui.UIComponent", "egret.DisplayObject"]);
-//# sourceMappingURL=prize.js.map
