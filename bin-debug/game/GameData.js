@@ -20,3 +20,4 @@ var GameData = (function () {
     return GameData;
 }());
 __reflect(GameData.prototype, "GameData");
+//# sourceMappingURL=GameData.js.map

@@ -52,7 +52,7 @@
 		<e:Rect width="720" height="1280" scaleX="1" scaleY="1" alpha="0.6" left="0" top="0"/>
 		<ns1:RewardMy id="popRewardMy" width="640" height="660" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" x="-168" y="-170" scaleX="1" scaleY="1"/>
 	</e:Group>
-	<e:Group id="popRuleGroup" width="720" height="1280" left="0" top="0">
+	<e:Group id="popRuleGroup" width="720" height="1280" left="0" top="0" visible="false">
 		<e:Rect width="720" height="1280" left="0" top="0" alpha=".6"/>
 		<ns1:Rule width="640" height="880" horizontalCenter="0" verticalCenter="0"/>
 	</e:Group>
